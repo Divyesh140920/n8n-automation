@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — n8n-automation</title>
+<style>
+  :root {
+    --ink: #1c1e21;
+    --muted: #5b6168;
+    --rule: #dcdfe3;
+    --paper: #ffffff;
+    --link: #1a5490;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6e8ea;
+      --muted: #a3aab2;
+      --rule: #343a40;
+      --paper: #16181a;
+      --link: #7fb3e3;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.25rem;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0 0 2rem;
+  }
+  h2 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.875em;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0 1.25rem;
+  }
+  footer { color: var(--muted); font-size: 0.875rem; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy policy</h1>
+  <p class="sub">n8n-automation · last updated 15 September 2026</p>
+
+  <p>
+    This policy covers the personal automation project described on the
+    <a href="index.html">homepage</a>. The project is operated by a single individual for
+    their own Google account. It has no other users and collects no data from anyone else.
+  </p>
+
+  <h2>What the software accesses</h2>
+  <p>With the account owner's Google authorization, the software reads:</p>
+  <ul>
+    <li>
+      <strong>Gmail messages.</strong> Message identifiers, thread identifiers, timestamps,
+      sender and recipient addresses, subject lines, and message bodies. These are used to
+      recognize which messages relate to a job application and what stage that application
+      has reached.
+    </li>
+    <li>
+      <strong>Google Sheets.</strong> Rows in two spreadsheets in the owner's own Drive, which
+      hold the application records and a stored position marker recording how far through the
+      mailbox the software has read.
+    </li>
+  </ul>
+
+  <h2>What it writes</h2>
+  <p>
+    The software writes only to the owner's own spreadsheets: application rows, status events,
+    and the position marker. It does not send, delete, modify, or reply to email. It does not
+    create, delete, or share any other file.
+  </p>
+
+  <h2>Where the data goes</h2>
+  <p>
+    Nowhere it was not already. Message content is processed on the owner's own computer, by
+    software running locally, and the results are written back into the owner's own Google
+    account. There is no external server, no analytics, no third-party data processor, and no
+    other person with access.
+  </p>
+  <p>
+    One exception worth stating plainly: short status notifications — for example, that an
+    interview invitation arrived from a named company — are delivered to the owner through a
+    private Telegram bot addressed to the owner's own chat. Telegram carries those messages.
+    No full message content is sent this way.
+  </p>
+
+  <h2>Retention</h2>
+  <p>
+    Records stay in the owner's spreadsheets until the owner deletes them. Copies of message
+    data held temporarily during processing are kept in the local n8n execution history and are
+    removed when that history is pruned or the container's data volume is deleted.
+  </p>
+
+  <h2>Sharing and sale</h2>
+  <p>
+    Data is never sold, rented, shared, transferred, or used for advertising, profiling, or
+    training machine-learning models. Google user data obtained through these scopes is used
+    solely to provide the tracking function described above.
+  </p>
+
+  <h2>Withdrawing access</h2>
+  <p>
+    The account owner can revoke this software's access at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+    Revocation stops all further access immediately. Records already written to the owner's
+    spreadsheets remain there and can be deleted directly.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If what the software accesses changes, this page is updated and the date at the top changes
+    with it.
+  </p>
+
+  <hr>
+  <footer>
+    Contact: <a href="mailto:Divyeshgutta1409@gmail.com">Divyeshgutta1409@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>

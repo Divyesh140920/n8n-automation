@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>n8n-automation</title>
+<style>
+  :root {
+    --ink: #1c1e21;
+    --muted: #5b6168;
+    --rule: #dcdfe3;
+    --paper: #ffffff;
+    --link: #1a5490;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6e8ea;
+      --muted: #a3aab2;
+      --rule: #343a40;
+      --paper: #16181a;
+      --link: #7fb3e3;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.25rem;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0 0 2rem;
+  }
+  h2 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.375rem; }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0 1.25rem;
+  }
+  footer { color: var(--muted); font-size: 0.875rem; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>n8n-automation</h1>
+  <p class="sub">A personal automation project. Not a public service.</p>
+
+  <p>
+    This is a self-hosted <a href="https://n8n.io">n8n</a> instance run by one person,
+    on one laptop, for one Google account. It reads job-application email and keeps a
+    private spreadsheet up to date so the status of each application does not have to be
+    tracked by hand.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads incoming mail to recognize application confirmations, interview invitations, assessments, offers, and rejections.</li>
+    <li>Records each of those as a row or event in a Google Sheet owned by the same account.</li>
+    <li>Sends the account owner a Telegram message when something needs attention.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>
+    Nobody else. There is no sign-up, no hosted version, and no other user. The Google
+    authorization exists so the software can reach the owner's own mailbox and the owner's
+    own spreadsheet. If you have arrived here from a consent screen and you are not the
+    owner of this project, you should not grant access.
+  </p>
+
+  <h2>Data</h2>
+  <p>
+    Everything stays inside the owner's Google account and the machine the software runs on.
+    Nothing is sold, shared, or sent to a third party.
+    The <a href="privacy.html">privacy policy</a> sets this out in full.
+  </p>
+
+  <hr>
+  <footer>
+    Questions: <a href="mailto:Divyeshgutta1409@gmail.com">Divyeshgutta1409@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
