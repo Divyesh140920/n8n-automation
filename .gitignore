@@ -1,0 +1,19 @@
+# Secrets & local config — never commit
+.env
+*.env
+credentials*.json
+*secret*
+*token*
+
+# n8n local data
+.n8n/
+n8n_data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
